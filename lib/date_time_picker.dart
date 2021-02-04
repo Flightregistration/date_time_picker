@@ -755,6 +755,7 @@ class _DateTimePickerState extends FormFieldState<String> {
     TimeOfDay ltTimePicked = await showTimePicker(
       context: context,
       initialTime: _tTime ?? TimeOfDay.now(),
+      helpText: widget.calendarTitle, // added this line to original package
       useRootNavigator: widget.useRootNavigator ?? false,
       routeSettings: widget.routeSettings,
       builder: (BuildContext context, Widget child) {
